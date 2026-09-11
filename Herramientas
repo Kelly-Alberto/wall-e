@@ -1,3 +1,8 @@
 Librerias para el proyecto:
 Astrronomy Engine/ lenguaje:python 
 Skyfield/Astropy - Lenguaje Python
+vision de trabajo
+INTEGRANTE 1. Frontend VR y sensores: configurar el entorno de realidd virtual movil,implementar la lenctura de sensores del telefono, diseñar la escena 3d y implementarel sistema de seleccion
+INTEGRANTE 2.iNGENIERO ASTRONOMICO: integrar la libreria se puede usar la version en c ,diseñar el algoritmo que toma la latitud, longitud y la hora actual,precision de escala,distancia visuaal y orientacion respecto al 
+al norte real.
+INTEGRANTE 3:INGENIERO DE IA Y Voice bot:desarrollar la API en python  que recibira desde la app movil,implementar voice bot,implementar de texto a voz para devolver el archivo de audio 
