@@ -2,7 +2,26 @@ Librerias para el proyecto:
 Astrronomy Engine/ lenguaje:python 
 Skyfield/Astropy - Lenguaje Python
 vision de trabajo
-INTEGRANTE 1. Frontend VR y sensores: configurar el entorno de realidd virtual movil,implementar la lenctura de sensores del telefono, diseñar la escena 3d y implementarel sistema de seleccion
-INTEGRANTE 2.iNGENIERO ASTRONOMICO: integrar la libreria se puede usar la version en c ,diseñar el algoritmo que toma la latitud, longitud y la hora actual,precision de escala,distancia visuaal y orientacion respecto al 
-al norte real.
-INTEGRANTE 3:INGENIERO DE IA Y Voice bot:desarrollar la API en python  que recibira desde la app movil,implementar voice bot,implementar de texto a voz para devolver el archivo de audio 
+Kelly: Frontend VR y sensores: configurar el entorno de realidd virtual movil,implementar la lenctura de sensores del telefono, diseñar la escena 3d y implementarel sistema de seleccion
+Herramientas de Software y Entorno de DesarrolloUnity Hub & Unity Editor (Versión LTS)
+Qué hace: Es el entorno principal de desarrollo 3D. 
+Google Cardboard XR Plugin for Unity
+Qué hace: Es el paquete oficial de Google para habilitar el modo VR en Android. Convierte la pantalla en vista estereoscópica (dividir la pantalla en dos ojos), renderiza la distorsión de lente y usa los sensores del teléfono para rotar la cámara cuando mueves la cabeza.
+Visual Studio (o Visual Studio Code)
+Qué hace: Es el editor de código donde escribirás los scripts en C# para controlar el sistema de selección por mirada (Gaze) y procesar los eventos de los sensores.
+Herramientas de Hardware y Pruebas
+Teléfono Móvil Android
+Qué hace: Es el dispositivo de pruebas real. Debe contar con giroscopio integrado para que la cámara VR funcione al mover la cabeza. Debe tener activado el Modo Desarrollador y la Depuración por USB.
+Cable de Datos USB (Calidad de transferencia)
+Qué hace: Conecta el teléfono a la PC para instalar directamente la aplicación compilada (APK) desde Unity mediante el comando Build and Run.
+Gafas VR para Smartphone (Google Cardboard, VR Box o similar)
+Qué hace: El visor físico donde colocas el teléfono para probar la inmersión, verificar la alineación de la mirada y ajustar las distancias de interacción.
+Librerías y Scripts Internos de Unity (Nativos)
+Input System / Input.gyro (C#)
+Qué hace: APIs nativas de Unity que te permiten leer métricas específicas de los sensores del teléfono (acelerómetro, tasa de rotación del giroscopio) si la lógica del proyecto requiere datos adicionales a la orientación de la cámara.
+Physics Raycaster / EventSystem (Unity UI & Physics)
+Qué hace: Componentes internos de Unity que proyectan un "rayo invisible" desde el centro de la cámara hacia adelante para detectar cuándo el usuario está mirando un objeto 3D en la escena y calcular el tiempo de mirada para la selección.
+INTEGRANTE 2.En lugar de ocupar librerías C nativas (como SOFA o NOVAS) dentro de la app móvil (lo cual requiere configurar NDK en Android o Xcode en iOS), 
+traslada los cálculos al backend en Python (Integrante 3). En Python existen librerías robustas y extremadamente fáciles de usar como Skyfield o Astropy. La app móvil solo envía la ubicación y la hora,
+y recibe las posiciones ya calculadas.
+INTEGRANTE 3: IA Y Voice bot:desarrollar la API en python  que recibira desde la app movil,implementar voice bot,implementar de texto a voz para devolver el archivo de audio 
