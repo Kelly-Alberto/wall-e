@@ -2,7 +2,7 @@ Librerias para el proyecto:
 Astrronomy Engine/ lenguaje:python 
 Skyfield/Astropy - Lenguaje Python
 vision de trabajo
-Kelly: Frontend VR y sensores: configurar el entorno de realidd virtual movil,implementar la lenctura de sensores del telefono, diseñar la escena 3d y implementarel sistema de seleccion
+KELLY: Frontend VR y sensores: configurar el entorno de realidd virtual movil,implementar la lenctura de sensores del telefono, diseñar la escena 3d y implementarel sistema de seleccion
 Herramientas de Software y Entorno de DesarrolloUnity Hub & Unity Editor (Versión LTS)
 Qué hace: Es el entorno principal de desarrollo 3D. 
 Google Cardboard XR Plugin for Unity
@@ -21,7 +21,7 @@ Input System / Input.gyro (C#)
 Qué hace: APIs nativas de Unity que te permiten leer métricas específicas de los sensores del teléfono (acelerómetro, tasa de rotación del giroscopio) si la lógica del proyecto requiere datos adicionales a la orientación de la cámara.
 Physics Raycaster / EventSystem (Unity UI & Physics)
 Qué hace: Componentes internos de Unity que proyectan un "rayo invisible" desde el centro de la cámara hacia adelante para detectar cuándo el usuario está mirando un objeto 3D en la escena y calcular el tiempo de mirada para la selección.
-Betsaida: Backend Astronómico y Matemáticas Espaciales: desarrollar el motor de cálculo de efemérides en Python, transformar coordenadas astronómicas esféricas a un espacio cartesiano 3D para Unity y estructurar la salida de datos del domo celeste.
+BETSAIDA: Backend Astronómico y Matemáticas Espaciales: desarrollar el motor de cálculo de efemérides en Python, transformar coordenadas astronómicas esféricas a un espacio cartesiano 3D para Unity y estructurar la salida de datos del domo celeste.
 Herramientas de Software y Entorno de Desarrollo
 Python 3.x
 Qué hace: Entorno de ejecución principal donde se procesa la lógica astronómica, las operaciones trigonométricas y el empaquetado de datos.
@@ -45,4 +45,4 @@ Mapeador de Coordenadas Esféricas a Cartesianas 3D (Matriz para Unity)
 Qué hace: Transforma los ángulos astronómicos (Altitud y Azimut) en valores vectoriales $(X, Y, Z)$ adaptados al sistema de coordenadas de Unity ($+Y$ arriba/cénit, $+X$ este, $+Z$ norte) sobre un domo virtual de radio definido.
 Filtro de Visibilidad y Filtrado de Objetos Ocultos
 Qué hace: Evalúa si un astro está por encima del horizonte ($\text{Altitud} > 0^\circ$) para añadir etiquetas de visibilidad al JSON y optimizar qué elementos debe renderizar la app en VR.
-INTEGRANTE 3: IA Y Voice bot:desarrollar la API en python  que recibira desde la app movil,implementar voice bot,implementar de texto a voz para devolver el archivo de audio 
+AYDAN: IA Y Voice bot:desarrollar la API en python  que recibira desde la app movil,implementar voice bot,implementar de texto a voz para devolver el archivo de audio 
